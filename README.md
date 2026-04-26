@@ -1,114 +1,24 @@
-<div align = "center">
+# 小钟的个人博客(https://xiaozhongyaonvli.github.io/)
 
-# Twilight
+这是我的个人技术博客，用来记录学习、实践和阶段性思考。
 
-A CMS integrated static blog template built with Astro framework.
+我目前是 USTB 27 届信息安全专业学生，内容主要围绕 Java 开发、Agent、Python，也会持续整理分布式系统、缓存、RAG、工程实践和一些源码分析笔记。
 
-[**🖥️ Live Demo**](https://twilight.spr-aachen.com)
-[**📝 Documentation**](https://docs.twilight.spr-aachen.com/en)
+## 博客内容方向
 
-[![Bilibili](https://img.shields.io/badge/Bilibili-Intro-blue?logo=Bilibili)](https://space.bilibili.com/359461611/lists/6641229)&nbsp;
-[![YouTube](https://img.shields.io/badge/YouTube-Intro-red?logo=YouTube)](https://youtube.com/playlist?list=PLzjq8Hx1SRV7yqZQiACcCJmKPeg5D8JKe&si=Bcz2o0PF8MFvx8ec)
-
-<table style="width: 100%; table-layout: fixed;">
-   <tr>
-      <td colspan="5"><img alt="Desktop" src="docs/image/Desktop.jpg" style="max-width: 100%;"></td>
-   </tr>
-   <tr>
-      <td><img alt="Mobile_4" src="docs/image/Mobile_4.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_2" src="docs/image/Mobile_2.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_1" src="docs/image/Mobile_1.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_3" src="docs/image/Mobile_3.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_5" src="docs/image/Mobile_5.jpg" style="max-width: 100%;"></td>
-   </tr>
-</table>
-
-</div>
-
----
-
-<div align = "center">
-
-English | [**中文**](docs/README_ZH.md)
-
-</div>
+- Java 基础与源码分析
+- 后端开发与系统设计
+- Agent、MCP、Function Calling、RAG
+- Python 自动化与工程实践
+- 学习过程中的总结、踩坑与复盘
 
 
-## ✨ Features
+## 内容目录
 
-### Content
-- **CMS Functionality**: Easy content management with Decap CMS integration
-- **Data Visualization**: Visualized personal data like projects, skills etc.
-- **Automatic Navigation**: Automatic generation of post navigation
+- `notes/`：平时整理的原始笔记
+- `src/content/posts/`：博客正式文章内容
+- `twilight.config.yaml`：站点基础配置
 
-### Components
-- **Analytics Support**: Umami analytics integration for visitor insights
-- **Comment System**: Twikoo-powered comment functionality
-- **Music Player**: Background music support with playlist management
-- **PIO Widget**: Interactive live2d character support
+## 关于这个博客
 
-### VFX
-- **Smooth Transition Animations**: Polished page component transition animations
-- **Customizable Theme Colors**: Realtime customizable color schemes
-- **Dynamic Wallpaper System**: Carousel support with multiple display modes
-- **Immersive Particle Effects**: Highly customizable animated particles
-
-### Compability
-- **Modern & Responsive Design**: Fully optimized for desktop and mobile devices
-- **Multilingual Capability**: Built-in translation functionality for global accessibility
-
-
-## 💻 Configuration
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Spr-Aachen/Twilight.git
-   # Navigate to the project directory
-   cd Twilight
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   # Install pnpm if not already installed
-   npm install -g pnpm
-   # Install project dependencies
-   pnpm install
-   ```
-
-3. **Configure your blog:**
-   - [Customize blog settings](https://docs.twilight.spr-aachen.com/en/config/core) inside `twilight.config.yaml`
-   - [Support CMS functionality](https://docs.twilight.spr-aachen.com/en/config/cms) inside `.env`
-   - [Support Umami analytics](https://docs.twilight.spr-aachen.com/en/config/analytics) inside `.env`
-   - [Manage site content](https://docs.twilight.spr-aachen.com/en/config/content) inside `src/content`
-
-4. **Start the development server:**
-   ```bash
-   pnpm dev
-   ```
-
-
-## 🚀 Deployment
-
-Deploy your blog to any static hosting platform
-
-
-## ⚡ Commands
-
-| Command                     | Action                        |
-|:----------------------------|:------------------------------|
-| ~~`pnpm lint`~~             | ~~Check and fix code issues~~ |
-| ~~`pnpm format`~~           | ~~Format code with Biome~~    |
-| `pnpm check`                | Run Astro error checking      |
-| `pnpm dev`                  | Start local dev server        |
-| `pnpm build`                | Build site to `./dist/`       |
-| `pnpm preview`              | Preview build locally         |
-| `pnpm astro ...`            | Run Astro CLI commands        |
-| `pnpm new-post <filename>`  | Create a new blog post        |
-
-
-## 🙏 Acknowledgements
-
-- Prototype   - [Fuwari](https://github.com/saicaca/fuwari)
-- Inspiration - [Yukina](https://github.com/WhitePaper233/yukina) & [Mizuki](https://github.com/matsuzaka-yuki/Mizuki)
-- CMS         - [astro-decap-cms-oauth](https://github.com/dorukgezici/astro-decap-cms-oauth)
-- Translation - [translate](https://gitee.com/mail_osc/translate)
+这个博客主要是我的个人技术沉淀空间。会持续更新 Java、Agent、Python 相关内容，也会记录信息安全专业学习过程中值得保留的问题、理解和实践经验。
