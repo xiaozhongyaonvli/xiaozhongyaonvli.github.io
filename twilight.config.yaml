@@ -309,7 +309,21 @@ post:
     # 评论配置
     comment:
         # 启用评论功能
-        enable: false
+        enable: true
+        # Giscus 评论系统配置
+        giscus:
+            repo: "xiaozhongyaonvli/xiaozhongyaonvli.github.io"
+            repo-id: "R_kgDOPqbhyw"
+            category: "Announcements"
+            category-id: "DIC_kwDOPqbhy84C_UCl"
+            mapping: "pathname"
+            strict: "0"
+            reactions-enabled: "1"
+            emit-metadata: "0"
+            input-position: "bottom"
+            theme: "preferred_color_scheme"
+            lang: "zh-CN"
+            loading: "lazy"
         # Twikoo 评论系统配置
         twikoo:
             # 环境 ID

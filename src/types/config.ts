@@ -383,6 +383,21 @@ export type PostConfig = {
             // 语言
             lang?: string;
         };
+        // Giscus 评论系统配置
+        giscus?: {
+            repo: string;
+            "repo-id": string;
+            category: string;
+            "category-id": string;
+            mapping: string;
+            strict?: string | number;
+            "reactions-enabled"?: string | number;
+            "emit-metadata"?: string | number;
+            "input-position"?: "top" | "bottom";
+            theme?: string;
+            lang?: string;
+            loading?: "lazy" | "eager";
+        };
     };
 };
 

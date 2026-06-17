@@ -1,0 +1,40 @@
+---
+import { postConfig } from "@/config";
+
+const config = postConfig.comment.giscus;
+---
+
+<giscus-comments class="block">
+    <div class="giscus"></div>
+</giscus-comments>
+
+<script is:inline define:vars={{ config }}>
+    class GiscusComments extends HTMLElement {
+        connectedCallback() {
+            this.renderGiscus();
+        }
+
+        renderGiscus() {
+            const container = this.querySelector('.giscus');
+            if (!container || !config) return;
+
+            container.innerHTML = '';
+
+            const script = document.createElement('script');
+            script.src = 'https://giscus.app/client.js';
+            script.async = true;
+            script.crossOrigin = 'anonymous';
+
+            Object.entries(config).forEach(([key, value]) => {
+                if (value === undefined || value === null) return;
+                script.setAttribute(`data-${key}`, String(value));
+            });
+
+            container.appendChild(script);
+        }
+    }
+
+    if (!customElements.get('giscus-comments')) {
+        customElements.define('giscus-comments', GiscusComments);
+    }
+</script>
