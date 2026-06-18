@@ -313,9 +313,9 @@ post:
         # Giscus 评论系统配置
         giscus:
             repo: "xiaozhongyaonvli/xiaozhongyaonvli.github.io"
-            repo-id: "R_kgDOPqbhyw"
+            repo-id: "R_kgDOS-Wx2A"
             category: "Announcements"
-            category-id: "DIC_kwDOPqbhy84C_UCl"
+            category-id: "DIC_kwDOS-Wx2M4C_aQS"
             mapping: "pathname"
             strict: "0"
             reactions-enabled: "1"
