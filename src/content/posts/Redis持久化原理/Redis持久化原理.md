@@ -38,7 +38,7 @@ RDB 的思路很直接：定时把内存里的数据拍个"快照"，保存成�
 
 还有自动触发的配置，在 `redis.conf` 里：
 
-```conf
+```ini
 save 900 1      # 900秒内至少1个key变了，就触发快照
 save 300 10     # 300秒内至少10个key变了
 save 60 10000   # 60秒内至少10000个key变了
@@ -80,7 +80,7 @@ fork() 之后：
 
 ### RDB 的配置全貌
 
-```conf
+```ini
 save 900 1
 save 300 10
 save 60 10000
@@ -119,7 +119,7 @@ AOF 的思路和 RDB 完全不同：它不存数据，而是**记操作**。每�
 
 其中最关键的是 **fsync 策略**，决定了数据安全性和性能的平衡：
 
-```conf
+```ini
 appendonly yes
 appendfilename "appendonly.aof"
 
@@ -139,7 +139,7 @@ AOF 有个天然的问题：文件会越来越大。比如你对同一个 key �
 
 **自动触发**：靠两个配置项控制：
 
-```conf
+```ini
 auto-aof-rewrite-percentage 100   # AOF 文件比上次重写后大了 100%，触发重写
 auto-aof-rewrite-min-size 64mb    # AOF 文件最小达到 64MB 才考虑重写
 ```
@@ -173,7 +173,7 @@ auto-aof-rewrite-min-size 64mb    # AOF 文件最小达到 64MB 才考虑重写
 
 这样得到的 AOF 文件 = RDB 快照 + 增量 AOF 命令。恢复的时候先加载 RDB 部分（快），再重放 AOF 部分（少量命令），兼具了两者的优点。
 
-```conf
+```ini
 aof-use-rdb-preamble yes
 ```
 
